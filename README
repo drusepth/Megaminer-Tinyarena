@@ -1,0 +1,12 @@
+To make the tinyarena work, you'll want to copy/paste your code base into a new folder in the tinyarena directory, and then add the name of that folder to a new line in the bots.txt file.
+
+Your AI should be able to be run by executing the run binary in your AI's directory, and runPython should be renamed to run if you're using python, etc. You'll want to manually run make on anything that needs made, because the tinyarena doesn't make; it only runs what you have.
+
+Run tinyarena with the command:
+    python arena.py
+
+If you cannot connect to a server, then you will need to edit the $server variable in play.pl to point to the Megaminer server you are using. By default, it looks for a server running locally. 
+
+You can add bots to the arena by adding them to the bots.txt file at any time. After each round (everyone vs everyone) is complete, the script will look for new bots and add them to the competitor pool without having to restart the arena. 
+
+Win/loss records are printed out to scoreboard.txt and wins are printed to the console. After each win, the console will output the winner, the number of total wins they have thus far, and the total number of matches they have played.
