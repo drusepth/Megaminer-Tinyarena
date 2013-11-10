@@ -81,10 +81,10 @@ class Arena:
 
     if (winner == red.version):
       red.wins += 1
-      print red.version + " wins against " + blue.version + " (" + str(red.wins) + "/" + str(red.matches) + " wins)"
+      print red.version + " wins against " + blue.version + " (" + str(red.wins) + "/" + str(red.matches) + " wins, ratio = " + str(float(red.wins) / float(red.matches)) + ")"
     elif (winner == blue.version):
       blue.wins += 1
-      print blue.version + " wins against " + red.version + " (" + str(blue.wins) + "/" + str(blue.matches) + " wins)"
+      print blue.version + " wins against " + red.version + " (" + str(blue.wins) + "/" + str(blue.matches) + " wins, ratio = " + str(float(blue.wins) / float(blue.matches)) + ")"
     else:
       print "No winner found between " + red.version + " and " + blue.version
 
